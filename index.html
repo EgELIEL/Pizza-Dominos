@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>.center-text{text-align:center;}</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="R.jpg" alt="Domino's Pizza Logo">
+        </div>
+        <nav>
+            
+            <ul>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#order">Realizar Pedido</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <ul  class="center-text">
+                <h2 class="title">Menú de Pizzas</h2>
+            </ul>
+            <div class="pizza-item">
+                <img src="margherita.jpg" alt="Pizza Margherita">
+                <h3>Pizza Margherita</h3>
+                <p>Tomate, mozzarella, albahaca fresca</p>
+                <p><strong>Precio:</strong> $100.00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="pepperoni.jpg" alt="Pizza Pepperoni">
+                <h3>Pizza Pepperoni</h3>
+                <p>Tomate, mozzarella, pepperoni</p>
+                <p><strong>Precio:</strong> $120.00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="hawaiana.jpg" alt="Pizza Hawaiana">
+                <h3>Pizza Hawaiana</h3>
+                <p>Tomate, mozzarella, jamón, piña</p>
+                <p><strong>Precio:</strong> $110.00</p>
+            </div>
+            <div class="pizza-item">
+                <img src="vegetariana.jpg" alt="Pizza Vegetariana">
+                <h3>Pizza Vegetariana</h3>
+                <p>Tomate, mozzarella, verduras mixtas</p>
+                <p><strong>Precio:</strong> $150.50</p>
+            </div>
+        </section>
+
+        <section id="order">
+            <h2 class="title">Realizar Pedido</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" placeholder="Tu dirección" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pizza">Selecciona tu Pizza:</label>
+                    <select id="pizza" name="pizza">
+                        <option value="margherita">Pizza Margherita - $100.00</option>
+                        <option value="pepperoni">Pizza Pepperoni - $120.00</option>
+                        <option value="hawaiana">Pizza Hawaiana - $110.00</option>
+                        <option value="vegetariana">Pizza Vegetariana - $150.50</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Cantidad:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                </div>
+
+                <button type="submit">Realizar Pedido</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Domino's Pizza. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
